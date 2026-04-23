@@ -1,0 +1,246 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const demoUrl = 'https://demo.dreameffort.com'
+---
+
+<Layout>
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 border-b border-border bg-bg/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold tracking-tight">
+        <span class="text-blue-400">Dream</span>Effort
+      </a>
+      <a
+        href={demoUrl}
+        class="px-5 py-2 text-sm font-medium rounded-lg bg-accent hover:bg-accent-light text-white transition-colors"
+      >
+        Try the Demo
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Section 1: Hero -->
+    <section class="pt-32 pb-20 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8">
+          Tasks lie.<br />
+          <span class="text-accent-light">Effort does not.</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
+          You fund engineering to build what matters. But can you see where that investment actually goes?
+        </p>
+        <p class="text-lg text-text-muted max-w-2xl mx-auto mb-12">
+          DreamEffort connects to your existing tools and shows whether effort aligns with strategy. No timesheets. No estimates. Just reality.
+        </p>
+        <a
+          href={demoUrl}
+          class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold rounded-xl bg-accent hover:bg-accent-light text-white transition-colors shadow-lg shadow-accent/20"
+        >
+          Try the Demo
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 2: Problem -->
+    <section class="py-24 px-6 border-t border-border">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+          Three questions you can't answer today.
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-xl bg-bg-card border border-border">
+            <div class="text-3xl mb-4 text-amber">?</div>
+            <p class="text-text-muted leading-relaxed">
+              Your board asks "are we on track?" — you have status updates, not investment data.
+            </p>
+          </div>
+          <div class="p-6 rounded-xl bg-bg-card border border-border">
+            <div class="text-3xl mb-4 text-amber">?</div>
+            <p class="text-text-muted leading-relaxed">
+              You declared your priorities — but where is your team actually spending time?
+            </p>
+          </div>
+          <div class="p-6 rounded-xl bg-bg-card border border-border">
+            <div class="text-3xl mb-4 text-amber">?</div>
+            <p class="text-text-muted leading-relaxed">
+              The gap between what you declared and what you funded stays invisible until the quarterly review.
+            </p>
+          </div>
+        </div>
+        <p class="text-center text-text-dim mt-10 italic">
+          Right now, the only way to answer these is Excel, manual work, and hoping the data is still fresh.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Solution -->
+    <section class="py-24 px-6 border-t border-border">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">
+          DreamEffort shows you where effort <span class="text-accent-light">actually</span> goes.
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-8 rounded-xl bg-bg-card border border-border hover:border-accent/40 transition-colors">
+            <div class="w-12 h-12 rounded-lg bg-accent-glow flex items-center justify-center mx-auto mb-5">
+              <svg class="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold mb-3">Real-time distribution</h3>
+            <p class="text-text-muted">See how engineering investment distributes across your priorities — in real time.</p>
+          </div>
+          <div class="p-8 rounded-xl bg-bg-card border border-border hover:border-accent/40 transition-colors">
+            <div class="w-12 h-12 rounded-lg bg-accent-glow flex items-center justify-center mx-auto mb-5">
+              <svg class="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold mb-3">Spot underfunding</h3>
+            <p class="text-text-muted">Spot underfunded initiatives before the quarter is over.</p>
+          </div>
+          <div class="p-8 rounded-xl bg-bg-card border border-border hover:border-accent/40 transition-colors">
+            <div class="w-12 h-12 rounded-lg bg-accent-glow flex items-center justify-center mx-auto mb-5">
+              <svg class="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold mb-3">Staffing recommendations</h3>
+            <p class="text-text-muted">Get staffing recommendations to close the gap — names, skills, availability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: How It Works -->
+    <section class="py-24 px-6 border-t border-border bg-bg-card/50">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Nothing changes for your team.
+        </h2>
+        <p class="text-text-muted text-center mb-16 text-lg">Three steps. Zero disruption.</p>
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-accent-light">1</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Connect</h3>
+            <p class="text-text-muted">Link your planning and activity tools. Read-only access.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-accent-light">2</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Collect</h3>
+            <p class="text-text-muted">DreamEffort traces commits to tasks to epics to initiatives. Automatically.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-accent-light">3</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">See</h3>
+            <p class="text-text-muted">Effort distribution, alignment gaps, and staffing recommendations — updated daily.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Screenshots — Strategy -->
+    <section class="py-24 px-6 border-t border-border">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">
+          Declared vs. Actual — at a glance.
+        </h2>
+        <p class="text-text-muted text-center mb-16 text-lg">
+          The Strategy page shows whether your investment matches your intent.
+        </p>
+        <div class="space-y-12">
+          <div>
+            <div class="rounded-xl border border-border overflow-hidden bg-bg-card">
+              <img
+                src="/screenshots/strategy-effort.png"
+                alt="Strategy page — Effort distribution showing declared vs actual investment per initiative"
+                class="w-full"
+                loading="lazy"
+              />
+            </div>
+            <p class="text-sm text-text-dim mt-3 text-center">Effort distribution — declared vs. actual investment</p>
+          </div>
+          <div>
+            <div class="rounded-xl border border-border overflow-hidden bg-bg-card">
+              <img
+                src="/screenshots/strategy-priorities.png"
+                alt="Strategy page — Priorities tab showing target vs actual percentage with alignment labels"
+                class="w-full"
+                loading="lazy"
+              />
+            </div>
+            <p class="text-sm text-text-dim mt-3 text-center">Priorities — target % vs. actual % with alignment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Signals -->
+    <section class="py-24 px-6 border-t border-border bg-bg-card/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Problems surface themselves.
+          </h2>
+          <p class="text-xl text-text-muted leading-relaxed">
+            Stale epics, capacity gaps, delivery risks — detected automatically from real work data. Ranked by your priority order.
+          </p>
+        </div>
+        <div>
+          <div class="rounded-xl border border-border overflow-hidden bg-bg-card">
+            <img
+              src="/screenshots/signals-delivery.png"
+              alt="Signals page with Delivery filter showing At Risk, Blocked, and Scope Growing signals"
+              class="w-full"
+              loading="lazy"
+            />
+          </div>
+          <p class="text-sm text-text-dim mt-3 text-center">Signals page — Delivery risks ranked by initiative priority</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Final CTA -->
+    <section class="py-32 px-6 border-t border-border">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          See where your effort <span class="text-accent-light">really</span> goes.
+        </h2>
+        <p class="text-xl text-text-muted mb-10">
+          Explore the live demo with sample data. No signup required.
+        </p>
+        <a
+          href={demoUrl}
+          class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold rounded-xl bg-accent hover:bg-accent-light text-white transition-colors shadow-lg shadow-accent/20"
+        >
+          Try the Demo
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-text-dim text-sm">
+        &copy; {new Date().getFullYear()} DreamEffort. All rights reserved.
+      </div>
+      <div class="flex items-center gap-6 text-sm text-text-dim">
+        <a href="mailto:contact@dreameffort.com" class="hover:text-text transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+</Layout>
