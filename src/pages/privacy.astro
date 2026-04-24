@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Privacy Policy — DreamEffort" description="How DreamEffort handles your data.">
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 border-b border-border bg-bg/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold tracking-tight">
+        <span class="text-blue-400">Dream</span>Effort
+      </a>
+      <a
+        href="https://demo.dreameffort.com/demo"
+        class="px-5 py-2 text-sm font-medium rounded-lg bg-accent hover:bg-accent-light text-white transition-colors"
+      >
+        Try the Demo
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-32 pb-20 px-6">
+    <div class="max-w-3xl mx-auto prose-invert">
+      <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
+      <p class="text-text-dim mb-10">Last updated: April 24, 2026</p>
+
+      <div class="space-y-8 text-text-muted leading-relaxed">
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">What we collect</h2>
+          <p>DreamEffort collects the following data when you connect your tools:</p>
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li><strong>Planning tool metadata</strong> — epic names, task status, initiative assignments, project structure. No task descriptions or attachments.</li>
+            <li><strong>Activity metadata</strong> — commit counts, timestamps, and author identifiers. No source code, diffs, or file contents.</li>
+            <li><strong>Account information</strong> — name and email address when you sign up.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">What we do NOT collect</h2>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Source code or repository contents</li>
+            <li>Task descriptions, comments, or attachments</li>
+            <li>Personal messages or communications</li>
+            <li>Browsing history or tracking cookies</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">How we use your data</h2>
+          <p>Your data is used solely to provide the DreamEffort service — measuring effort distribution across your strategic initiatives. We do not sell, share, or use your data for advertising.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">Data isolation</h2>
+          <p>Each customer's data is fully isolated at the database level. Your data is never co-mingled with another customer's data. Tenant isolation is enforced at every layer of the application.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">Data storage</h2>
+          <p>Data is stored in PostgreSQL databases hosted by Neon (United States). All connections are encrypted in transit (TLS). Access to production databases is restricted to authorized personnel only.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">Data retention & deletion</h2>
+          <p>Your data is retained for as long as your account is active. You may request full deletion of your data at any time by contacting us. Upon request, all your data — including activity records, metrics, and account information — will be permanently deleted within 30 days.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">Third-party services</h2>
+          <p>DreamEffort uses the following third-party services to operate:</p>
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li><strong>Auth0</strong> — authentication and identity management</li>
+            <li><strong>Neon</strong> — database hosting</li>
+            <li><strong>Railway</strong> — application hosting</li>
+            <li><strong>Vercel</strong> — website hosting</li>
+            <li><strong>Formspree</strong> — contact form processing</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">Your rights</h2>
+          <p>You have the right to:</p>
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>Access the data we hold about your organization</li>
+            <li>Request correction of inaccurate data</li>
+            <li>Request deletion of all your data</li>
+            <li>Export your data in a standard format</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold text-text mb-3">Contact</h2>
+          <p>For any privacy-related questions or requests, contact us at <a href="mailto:contact@dreameffort.com" class="text-accent-light hover:underline">contact@dreameffort.com</a>.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-border py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-text-dim text-sm">
+        &copy; {new Date().getFullYear()} DreamEffort. All rights reserved.
+      </div>
+      <div class="flex items-center gap-6 text-sm text-text-dim">
+        <a href="mailto:contact@dreameffort.com" class="hover:text-text transition-colors">contact@dreameffort.com</a>
+      </div>
+    </div>
+  </footer>
+</Layout>
